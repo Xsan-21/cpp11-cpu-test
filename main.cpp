@@ -13,11 +13,11 @@
 
 void runTime()
 {
-	auto start = std::chrono::steady_clock::now();
 	unsigned static long numberGenerated = 0;
 	unsigned int numberOfIters = ~0;
 	std::default_random_engine generator;
 	std::uniform_int_distribution<long> distribution(0, numberOfIters);
+	auto start = std::chrono::steady_clock::now();
 
 	for(unsigned long i = 0; i < numberOfIters; i++)
 	{
